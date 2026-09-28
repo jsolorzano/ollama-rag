@@ -1,6 +1,6 @@
 Tareas:
-1. Ir a pasear al perro.
-2. Ir a comprar despensa.
-3. Programar un login.
-4. Hacer un video.
-5. Salir a caminar.
+1 Ir a pasear al perro
+2 Ir a comprar despensa
+3 Programar un login
+4 Hacer un video
+5 Salir a caminar
