@@ -8,7 +8,8 @@ from langchain.chains import RetrievalQA
 # Parte 1 Carga de data
 # 1.- Carga documento
 loader = TextLoader("document.txt", encoding="utf-8")
-docs = loader.load()
+loader2 = TextLoader("asimov.txt", encoding="utf-8")
+docs = loader2.load()
 
 # 2.- Dividir en chunks
 text_splitter = RecursiveCharacterTextSplitter(
@@ -42,6 +43,10 @@ qa = RetrievalQA.from_chain_type(
 
 # 7.- Pregunta
 query = "¿Cuál es la primera tarea de la lista?"
-result = qa.invoke({"query": query})
+query2 = "¿Qué pasó el 14 de mayo de 2061?"
+result = qa.invoke({"query": query2})
 
+print("Pregunta:")
+print(query2)
+print("Respuesta:")
 print(result["result"])
